@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+  <services>    
+    <service id="twig.extension.yit.ads" class="Yit\AdsBundle\Twig\Extension\AdsExtension" public="false">
+      <tag name="twig.extension" />
+            
+      <call method="setEntityManager">
+        <argument type="service" id="doctrine.orm.entity_manager" />
+      </call>
+    </service>     
+        
+    <service id="yit.ads.admin.ads" class="Yit\AdsBundle\Admin\AdsAdmin">
+      <tag name="sonata.admin" manager_type="orm" group="Ads" label="Ads"/>
+      <argument/>
+      <argument>Yit\AdsBundle\Entity\Ads</argument>
+      <argument>SonataAdminBundle:CRUD</argument>
+    </service>  
+    
+    <service id="yit.content.admin.ads" class="Yit\AdsBundle\Admin\ContentAdmin">
+      <tag name="sonata.admin" manager_type="orm" group="Ads" label="Ads Content"/>
+      <argument/>
+      <argument>Yit\AdsBundle\Entity\Content</argument>
+      <argument>SonataAdminBundle:CRUD</argument>
+    </service>   
+  </services>
+  
+</container>
