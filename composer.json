@@ -4,5 +4,9 @@
     "require": {
         "sonata-project/admin-bundle": "2.1.*@dev"
     },
+    "autoload": {
+        "psr-0": { "Yit\\AdsBundle": "" },
     "target-dir": "Yit/AdsBundle"
+    }
 }
+
