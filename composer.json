@@ -4,4 +4,5 @@
     "require": {
         "sonata-project/admin-bundle": "2.1.*@dev"
     }
+    "target-dir": "Yit/AdsBundle",
 }
