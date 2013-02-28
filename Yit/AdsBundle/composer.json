@@ -1,6 +1,7 @@
 {
     "name": "yit/ads-bundle",
     "type": "symfony-bundle",
+    "license": "YIT",
     "require": {
         "sonata-project/admin-bundle": "2.1.*@dev"
     },
