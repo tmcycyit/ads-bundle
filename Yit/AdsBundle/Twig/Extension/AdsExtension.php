@@ -39,7 +39,7 @@ class AdsExtension extends \Twig_Extension
 
     if ($ad)
     {
-      return $ad->getContent();
+      return $ad->getContents();
     }
 
     return '';
