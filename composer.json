@@ -1,10 +1,16 @@
 {
     "name": "yit/ads-bundle",
     "type": "symfony-bundle",
-    "license": "YIT",
+    "description": "Symfony YitAdsBundle",
+    "keywords": ["ads", "frontend", "yit"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "2.*"
+    },
     "autoload": {
-        "psr-0": { "Yit\\AdsBundle": "" },
+        "psr-0": { "Yit\\AdsBundle": "" }
+    },
     "target-dir": "Yit/AdsBundle"
-    }
 }
 
