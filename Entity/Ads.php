@@ -28,7 +28,7 @@ class Ads
    * 
    * @ORM\Column(type="string", length=50, nullable=false)
    */
-  private $domain;
+  private $domain = '';
 
   /**
    * @var string position

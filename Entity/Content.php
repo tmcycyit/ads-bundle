@@ -26,7 +26,7 @@ class Content
    * 
    * @ORM\Column(type="text", length=200, nullable=true)
    */
-  protected $title;
+  protected $title = '';
 
   /**
    * @var text $content
