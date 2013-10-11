@@ -21,7 +21,6 @@ class ContentAdmin extends Admin
     protected function configureShowField(ShowMapper $showMapper)
     {
         $showMapper
-            ->add('id', null, array('label' => 'Id'))
             ->add('title', null, array('label' => 'Title'))
             ->add('content', null, array('label' => 'Content'));
     }
@@ -35,8 +34,7 @@ class ContentAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->addIdentifier('id')
-            ->add('title')
+            ->addIdentifier('title')
             ->add('_action', 'actions', array('actions' => array(
                 'view' => array(),
                 'edit' => array(),
@@ -52,8 +50,6 @@ class ContentAdmin extends Admin
      */
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $languages = $this->configurationPool->getContainer()->getParameter('languages');
-        
         $formMapper
             ->with('General')
                 ->add('title', 'text', array('required' => false))
