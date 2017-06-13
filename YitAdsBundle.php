@@ -1,9 +1,9 @@
 <?php
 
-namespace Yit\AdsBundle;
+namespace Tmcycyit\AdsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class YitAdsBundle extends Bundle
+class TmcycyitAdsBundle extends Bundle
 {
 }

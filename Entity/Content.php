@@ -1,13 +1,13 @@
 <?php
 
-namespace Yit\AdsBundle\Entity;
+namespace Tmcycyit\AdsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
- * Yit\AdsBundle\Entity\Ads
+ * Tmcycyit\AdsBundle\Entity\Ads
  * @ORM\Entity
  * @ORM\Table(name="ads_content")
  */

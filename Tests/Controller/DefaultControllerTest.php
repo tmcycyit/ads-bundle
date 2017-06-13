@@ -1,6 +1,6 @@
 <?php
 
-namespace Yit\AdsBundle\Tests\Controller;
+namespace Tmcycyit\AdsBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Yit\AdsBundle\Entity;
+namespace Tmcycyit\AdsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
- * Yit\AdsBundle\Entity\Ads
+ * Tmcycyit\AdsBundle\Entity\Ads
  * @ORM\Entity
  * @ORM\Table(name="ads", 
  *        uniqueConstraints={@ORM\UniqueConstraint(name="search_ad_by_domain_and_position", columns={"domain", "position"})}
@@ -112,10 +112,10 @@ class Ads
     /**
      * Set contents
      *
-     * @param \Yit\AdsBundle\Entity\Content $contents
+     * @param \Tmcycyit\AdsBundle\Entity\Content $contents
      * @return Ads
      */
-    public function setContents(\Yit\AdsBundle\Entity\Content $contents = null)
+    public function setContents(\Tmcycyit\AdsBundle\Entity\Content $contents = null)
     {
         $this->contents = $contents;
     
@@ -125,7 +125,7 @@ class Ads
     /**
      * Get contents
      *
-     * @return \Yit\AdsBundle\Entity\Content 
+     * @return \Tmcycyit\AdsBundle\Entity\Content
      */
     public function getContents()
     {

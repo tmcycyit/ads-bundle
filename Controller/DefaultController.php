@@ -1,6 +1,6 @@
 <?php
 
-namespace Yit\AdsBundle\Controller;
+namespace Tmcycyit\AdsBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;

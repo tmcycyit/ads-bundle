@@ -1,6 +1,6 @@
 <?php
 
-namespace Yit\AdsBundle\Twig\Extension;
+namespace Tmcycyit\AdsBundle\Twig\Extension;
 
 use Symfony\Component\Routing\RouteCollection;
 
@@ -35,7 +35,7 @@ class AdsExtension extends \Twig_Extension
 
   public function ad($domain, $position)
   {
-    $ad = $this->em->getRepository('YitAdsBundle:Ads')->findOneBy(array('domain' => $domain, 'position' => $position));
+    $ad = $this->em->getRepository('TmcycyitAdsBundle:Ads')->findOneBy(array('domain' => $domain, 'position' => $position));
 
     if ($ad)
     {

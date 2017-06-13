@@ -1,5 +1,5 @@
 <?php
-namespace Yit\AdsBundle\Admin;
+namespace Tmcycyit\AdsBundle\Admin;
 
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Form\FormMapper;

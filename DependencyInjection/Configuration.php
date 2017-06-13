@@ -1,6 +1,6 @@
 <?php
 
-namespace Yit\AdsBundle\DependencyInjection;
+namespace Tmcycyit\AdsBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
